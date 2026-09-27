@@ -1,0 +1,10 @@
+[package]
+name = "orx-col-dim"
+version = "0.1.0"
+edition = "2024"
+authors = ["orxfun <orx.ugur.arikan@gmail.com>"]
+description = "Dimension trait and implementations for multi-dimensional collections"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/orxfun/orx-col-dim/"
+keywords = ["vec", "vector", "algorithm", "trait", "monomorphisation"]
+categories = ["data-structures", "algorithms", "no-std"]
