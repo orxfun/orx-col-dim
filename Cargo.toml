@@ -1,6 +1,6 @@
 [package]
 name = "orx-col-dim"
-version = "1.0.0"
+version = "0.1.0"
 edition = "2024"
 authors = ["orxfun <orx.ugur.arikan@gmail.com>"]
 description = "Dimension trait and implementations for multi-dimensional collections"
