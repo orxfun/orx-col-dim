@@ -13,6 +13,8 @@ impl Dim for D1 {
     type Idx = usize;
 
     type ChildIdx = IdxNever;
+
+    type DescendentIdx = DescendentIdxD1;
 }
 
 pub enum DescendentIdxD1 {

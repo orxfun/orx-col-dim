@@ -15,4 +15,6 @@ impl Dim for DNever {
     type Idx = IdxNever;
 
     type ChildIdx = IdxNever;
+
+    type DescendentIdx = IdxNever;
 }

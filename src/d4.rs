@@ -13,6 +13,8 @@ impl Dim for D4 {
     type Idx = [usize; Self::D];
 
     type ChildIdx = usize;
+
+    type DescendentIdx = DescendentIdxD4;
 }
 
 pub enum DescendentIdxD4 {
