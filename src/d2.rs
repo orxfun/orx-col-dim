@@ -19,8 +19,11 @@ impl Dim for D2 {
 
 // descendent
 
+/// Index into a descendant dimension of a two-dimensional collection.
 pub enum DescendentIdxD2 {
+    /// Index for a zero-dimensional descendant.
     Child0([usize; 0]),
+    /// Index for a one-dimensional descendant.
     Child1([usize; 1]),
 }
 

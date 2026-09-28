@@ -19,9 +19,13 @@ impl Dim for D3 {
 
 // descendent
 
+/// Index into a descendant dimension of a three-dimensional collection.
 pub enum DescendentIdxD3 {
+    /// Index for a zero-dimensional descendant.
     Child0([usize; 0]),
+    /// Index for a one-dimensional descendant.
     Child1([usize; 1]),
+    /// Index for a two-dimensional descendant.
     Child2([usize; 2]),
 }
 
