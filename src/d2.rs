@@ -14,3 +14,8 @@ impl Dim for D2 {
 
     type ChildIdx = usize;
 }
+
+pub enum ChildIdxD2 {
+    Child0([usize; 0]),
+    Child1([usize; 1]),
+}
