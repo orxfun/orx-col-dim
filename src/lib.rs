@@ -25,8 +25,8 @@ mod d_never;
 mod dim;
 
 pub use d_never::{DNever, IdxNever};
-pub use d1::D1;
-pub use d2::D2;
-pub use d3::D3;
-pub use d4::D4;
+pub use d1::{D1, DescendentIdxD1};
+pub use d2::{D2, DescendentIdxD2};
+pub use d3::{D3, DescendentIdxD3};
+pub use d4::{D4, DescendentIdxD4};
 pub use dim::Dim;
