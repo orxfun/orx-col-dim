@@ -13,4 +13,7 @@ pub trait Dim: Clone + Copy + Debug + PartialEq + Eq + 'static {
 
     /// Index type for a child collection.
     type ChildIdx;
+
+    /// Index type for a descendant collection.
+    type DescendentIdx;
 }
