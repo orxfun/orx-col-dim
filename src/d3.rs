@@ -15,13 +15,13 @@ impl Dim for D3 {
     type ChildIdx = usize;
 }
 
-pub enum ChildIdxD3 {
+pub enum DescendentIdxD3 {
     Child0([usize; 0]),
     Child1([usize; 1]),
     Child2([usize; 2]),
 }
 
-impl From<usize> for ChildIdxD3 {
+impl From<usize> for DescendentIdxD3 {
     fn from(value: usize) -> Self {
         Self::Child1([value])
     }

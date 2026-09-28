@@ -15,6 +15,6 @@ impl Dim for D1 {
     type ChildIdx = IdxNever;
 }
 
-pub enum ChildIdxD1 {
+pub enum DescendentIdxD1 {
     Child0([usize; 0]),
 }
