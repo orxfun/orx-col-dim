@@ -17,6 +17,8 @@ impl Dim for D4 {
     type DescendentIdx = DescendentIdxD4;
 }
 
+// descendent
+
 pub enum DescendentIdxD4 {
     Child0([usize; 0]),
     Child1([usize; 1]),
@@ -24,8 +26,32 @@ pub enum DescendentIdxD4 {
     Child3([usize; 3]),
 }
 
+impl From<[usize; 0]> for DescendentIdxD4 {
+    fn from(value: [usize; 0]) -> Self {
+        Self::Child0(value)
+    }
+}
+
 impl From<usize> for DescendentIdxD4 {
     fn from(value: usize) -> Self {
         Self::Child1([value])
+    }
+}
+
+impl From<[usize; 1]> for DescendentIdxD4 {
+    fn from(value: [usize; 1]) -> Self {
+        Self::Child1(value)
+    }
+}
+
+impl From<[usize; 2]> for DescendentIdxD4 {
+    fn from(value: [usize; 2]) -> Self {
+        Self::Child2(value)
+    }
+}
+
+impl From<[usize; 3]> for DescendentIdxD4 {
+    fn from(value: [usize; 3]) -> Self {
+        Self::Child3(value)
     }
 }
