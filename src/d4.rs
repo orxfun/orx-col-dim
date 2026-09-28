@@ -21,3 +21,9 @@ pub enum ChildIdxD4 {
     Child2([usize; 2]),
     Child3([usize; 3]),
 }
+
+impl From<usize> for ChildIdxD4 {
+    fn from(value: usize) -> Self {
+        Self::Child1([value])
+    }
+}
